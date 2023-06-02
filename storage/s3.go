@@ -169,7 +169,6 @@ func (s *S3) open() (err error) {
 
 	if len(endpoint) > 0 {
 		cfg.Endpoint = aws.String(endpoint)
-		cfg.S3ForcePathStyle = aws.Bool(true)
 	}
 
 	accessKeyId := s.viper.GetString("access_key_id")
