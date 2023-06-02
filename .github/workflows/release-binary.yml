@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ionling/gobackup
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   goreleaser:
